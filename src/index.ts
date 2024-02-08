@@ -10,7 +10,7 @@ const testFunction = onRequest(async (request, response) => {
 
   logger.info('Hello testFunction!');
 
-  await cloudTask('projects/get-emails-project/locations/us-central1');
+  await cloudTask('your project');
 
   response.send(`Firebase function run OK with cloudTask client`);
 });
